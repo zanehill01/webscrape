@@ -50,4 +50,11 @@ for x in range(1, 6):
     ws['E' + str(x+1)] = total_gross
     ws['F' + str(x+1)] = str(percent_gross) + '%'
 
+ws.column_dimensions['A'].width = 5
+ws.column_dimensions['B'].width = 20
+ws.column_dimensions['C'].width = 25
+ws.column_dimensions['D'].width = 16
+ws.column_dimensions['E'].width = 20
+ws.column_dimensions['F'].width = 26
+
 wb.save('BoxOfficeReport.xlsx')
