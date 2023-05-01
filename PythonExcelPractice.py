@@ -65,10 +65,10 @@ write_sheet['B' + str(summary_row)].font = Font(size=16, bold=True)
 write_sheet['C' + str(summary_row)] = '=Average(C2:C' + str(write_row) + ')'
 write_sheet['D' + str(summary_row)] = '=Average(D2:D' + str(write_row) + ')'
 
-write_sheet.column_dimensions['A'] = 16
-write_sheet.column_dimensions['B'] = 15
-write_sheet.column_dimensions['C'] = 15
-write_sheet.column_dimensions['D'] = 15
+write_sheet.column_dimensions['A'].width = 16
+write_sheet.column_dimensions['B'].width = 15
+write_sheet.column_dimensions['C'].width = 15
+write_sheet.column_dimensions['D'].width = 15
 
 for cell in write_sheet["C:C"]:
     cell.number_format = '#,##0'
