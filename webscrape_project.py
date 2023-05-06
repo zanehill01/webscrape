@@ -41,7 +41,7 @@ reg_font = Font(name='Times New Roman', size = 14)
 ws['A1'] = " # "
 ws['A1'].font = title_font
 
-ws['B1'] = "Name"
+ws['B1'] = "Crypto Currency"
 ws['B1'].font = title_font
 
 ws['C1'] = "Symbol"
@@ -50,7 +50,7 @@ ws['C1'].font = title_font
 ws['D1'] = "Current Price"
 ws['D1'].font = title_font
 
-ws['E1'] = "Percent Change"
+ws['E1'] = "Percent Change (24 hr)"
 ws['E1'].font = title_font
 
 ws['F1'] = "New Price"
@@ -62,7 +62,7 @@ ws.column_dimensions['A'].width = 5
 ws.column_dimensions['B'].width = 35
 ws.column_dimensions['C'].width = 15
 ws.column_dimensions['D'].width = 25
-ws.column_dimensions['E'].width = 25
+ws.column_dimensions['E'].width = 35
 ws.column_dimensions['F'].width = 20
 
 # counter variables
